@@ -1,17 +1,17 @@
 <?php
     $User= array("Cole", "Camryn", "Nathan", "Aegan", "Tessa");
-    $Password = array(123,456,789,1011,1213);
+    $Pass = array(123,456,789,1011,1213);
 
      $estado=false; 
 
    $nombre=$_POST['Nombre'];
-   $password=$_POST['Pass'];
+   $Password=$_POST['Pass'];
 
    $tam=count($user); 
 
    for ($x=0; $x<$tam;$x++)
    {
-   if ($user[$x]==$nombre && $pass[$x]==$password)
+   if ($user[$x]==$nombre && $Pass[$x]==$Password)
    {
        $estado=true;
    }
