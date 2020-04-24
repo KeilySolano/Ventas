@@ -1,0 +1,45 @@
+body {
+	background: lightsalmon;
+}
+
+h1.titulo {
+	font-family: Helvetica;
+	font-size: 46px;
+	color: white;
+}
+
+header {
+	background: indianred;
+}
+
+#C1 {
+	font-size: 15px;
+}
+
+#C2 {
+	font-size: 15px;
+}
+
+#zoom {
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 12px;
+	color: black;
+	background: palegoldenrod;
+}
+
+#less {
+	font-family: "Homer Simpson UI", bold;
+	font-size: 18px;
+	background: moccasin;
+}
+
+#siri {
+	font-style: italic;
+	color: black;
+}
+
+#ce1 {
+	font-family: fantasy;
+	font-size: 17px;
+}

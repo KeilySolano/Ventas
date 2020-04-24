@@ -1,26 +1,30 @@
 <?php
-$User= array("Cole", "Camryn", "Nathan", "Aegan", "Tessa");
-$Password = array(123,456,789,1011,1213);
+    $User= array("Cole", "Camryn", "Nathan", "Aegan", "Tessa");
+    $Password = array(123,456,789,1011,1213);
 
-$Estado = false;
+     $estado=false; 
 
-$Nombre = $_POST["Nombre"];
-$Password = $_POST["Pass"];
+   $nombre=$_POST['Nombre'];
+   $password=$_POST['Pass'];
 
-$Key = count($User);
-for($x=0; $x<Key; $x++)
-{
-  if($User[$x] == $Nombre && $Pass[$x]== $Password)
-  {
-   $Estado = true;
-  }
-}
- if($Estado)
-  {
-   echo "User successfully enabled";
-  }
-  else 
-  {
-    echo "User not enabled, please try again later ";
-  }
-?>
+   $tam=count($user); 
+
+   for ($x=0; $x<$tam;$x++)
+   {
+   if ($user[$x]==$nombre && $pass[$x]==$password)
+   {
+       $estado=true;
+   }
+   
+   }
+   if ($estado)
+   {
+       header("location:ventas.html");
+   }
+   else 
+   {
+       header("location:index.html");
+   }
+
+
+  ?>
