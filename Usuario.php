@@ -1,6 +1,6 @@
 <?php
 $User= array("cole", "Camryn", "Nathan", "Aegan", "Tessa");
-$Password = array(123,456,789,1011,1213);
+$Pass = array(123,456,789,1011,1213);
 
 $Estado = false;
 
@@ -11,17 +11,17 @@ $key = count($User);
 
 for($x=0; $x<$key; $x++)
 {
-  if($User[$x] == $Nombre && $Password[$x]== $Password)
+  if($User[$x] == $Nombre && $Pass[$x]== $Password)
   {
    $Estado = true;
   }
 }
  if($Estado)
   {
-   echo "User successfully enabled";
+   header("location:Ventas.html");
   }
   else 
   {
-    echo "User not enabled, please try again later ";
+    header("location:Index.html");
   }
 ?>
