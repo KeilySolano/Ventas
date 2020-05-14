@@ -6,7 +6,7 @@
             $Nombre =$_POST['Nombre'];
             $Password =$_POST['Password'];
 
-            $key = $Validere->ValidarBruker( $Nombre, $Password);
+            $key = $Validere->ValidarBruker($Nombre, $Password);
 
             var_dump($key);
 
