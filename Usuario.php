@@ -1,27 +1,21 @@
 <?php
-$User= array("cole", "Camryn", "Nathan", "Aegan", "Tessa");
-$Pass = array(123,456,789,1011,1213);
+            include ('ValidarUsuario.php');
 
-$Estado = false;
+            $Validere = new ValidarUsuario;
 
-$Nombre =$_POST['Nombre'];
-$Password =$_POST['Password'];
+            $Nombre =$_POST['Nombre'];
+            $Password =$_POST['Password'];
 
-$key = count($User);
+            $key = $Validere->ValidarBruker( $Nombre, $Password);
 
-for($x=0; $x<$key; $x++)
-{
-  if($User[$x] == $Nombre && $Pass[$x]== $Password)
-  {
-   $Estado = true;
-  }
-}
- if($Estado)
-  {
-   header("location:Ventas.html");
-  }
-  else 
-  {
-    header("location:Index.html");
-  }
+            var_dump($key);
+
+         if($key ->num_rows == 1 )
+         {
+              header("location:Ventas.html");
+         }
+         else 
+         {
+              header("location:Index.html");
+         }
 ?>
