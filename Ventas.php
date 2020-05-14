@@ -8,69 +8,79 @@
     <title> Ventas </title>
 </head>
 <body>
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-    <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagenes/CALM.jpg" class="d-block w-25" alt="">
-      <div class="carousel-caption d-none d-md-block">
-        <h4> CALM </h4>
+     <div align="center" id="VENTAS">
+		<h1> VENTAS</h1>
+        <hr />
+        <br />
+	 </div>
+		<div align="center">
+        <a href="Index.html">SALIR</a>
+     </div>
+    <br />
+    <br />
+    <br />
+<div class="row row-cols-1 row-cols-md-2">
+  <div class="col mb-4">
+    <div class="card">
+      <img src="imagenes/CALM.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+                <h4> CALM </h4>
         <h5> 5 Seconds Of Summer</h5>
         <p>$12.29</p>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="imagenes/CAMILA.jpg" class="d-block w-25" alt="">
-      <div class="carousel-caption d-none d-md-block">
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="imagenes/CAMILA.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
         <h4> Romance [Explicit] </h4>
         <h5> Camila Cabello</h5>
         <p>$11.22</p>
+
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="imagenes/GREEN DAY.jpg" class="d-block w-25" alt="">
-      <div class="carousel-caption d-none d-md-block">
-        <h4>Father of All... [Explicit]  </h4>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="imagenes/GREEN DAY.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+                <h4>Father of All... [Explicit]  </h4>
         <h5> Green Day </h5>
         <p>$9.49</p>
       </div>
     </div>
   </div>
-  <div class="carousel-item">
-      <img src="imagenes/MANIAC.jpg" class="d-block w-25" alt="">
-      <div class="carousel-caption d-none d-md-block">
-        <h4>Manic [Explicit]</h4>
-        <h5>Halsey </h5>
-         <p> $ 11.49 </p>
+    <div class="col mb-4">
+    <div class="card">
+      <img src="imagenes/21.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4> 21 </h4>
+        <h5> Adele  </h5>
+       <p> $ 10.95 </p>
       </div>
     </div>
   </div>
-<div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="imagenes/WALLS.jpg" class="d-block w-25" alt="">
-      <div class="carousel-caption d-none d-md-block">
-        <h4> Walls </h4>
-        <h5> Louis Tomlinson </h5>
-       <p> $ 9.99 </p>
+    <div class="col mb-4">
+    <div class="card">
+      <img src="imagenes/Pinkfloyd.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4> The Dark Side of the Moon </h4>
+        <h5> Pink Floyd  </h5>
+       <p> $ 29.37 </p>
       </div>
     </div>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <img src="imagenes/artic.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h4>AM</h4>
+        <h5>Arctic Monkeys  </h5>
+        <p> $ 9.99 </p>
+      </div>
+    </div>
+  </div>
 </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
