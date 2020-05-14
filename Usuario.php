@@ -12,7 +12,7 @@
 
          if($key ->num_rows == 1 )
          {
-              header("location:Ventas.html");
+              header("location:Ventas.php");
          }
          else 
          {
