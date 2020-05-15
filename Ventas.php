@@ -1,25 +1,21 @@
 ﻿﻿<!doctype html>
 <html lang="en">
     <head>
-           <link rel="stylesheet" type="text/css" href="Estilos.css" />
+    <link rel="stylesheet" type="text/css" href="Estilos.css" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
         <title>Ventas</title>
     </head>
-    <body style="background: #pink">
-        <br />
-        <div align="center">
-            <h1>VENTAS</h1>
-        </div>
 
-        <div align="right">
-            <a href="index.html">Salir</a>
-            
-        </div>
-        <hr />
-        <br />
+     <form action="eliminar.php">
+            <input type="submit" value="Salir" name="Elimanr">
+     </form>
+
+    <body style="background: #pink">
+       
+       
 
         <?php
             if(isset($_GET['producto']))
@@ -29,18 +25,17 @@
                 $producto=$_GET['producto'];
                 $precio=$_GET['precio'];
 
-                $query="INSERT INTO `carrito`( `producto`, `precio`) VALUES ('$producto','$precio');";
-                //echo " datos de producto ".$_GET['producto']."--- Precio ".$_GET['precio'];
+                $query="INSERT INTO `carrito`( `producto`, `precio`) VALUES ('$producto','$precio');";                
                 $consulta=$con->query($query);
                 $con->close();
              ?>
                 <table align="center" border=1>
                     <tr>
                         <td>
-                            <p>Producto</p>
+                            <p>Precio</p>
                         </td>
                         <td>
-                            <p>Precio</p>
+                            <p>Producto</p>
                         </td>
                     </tr>
                     <?php
@@ -64,7 +59,7 @@
                             ";
                         }
                     ?>
-                </table>
+                </table>             
             <?php                   
             }
         ?>
@@ -89,82 +84,89 @@
                                 </td>
                                 <td>
                                     <p>
-                                        El Galaxy A50 es pura estética de primera calidad. Ya sea en sus colores modernos blanco o negro o en los colores brillantes coral o azul, su cuerpo delgado cabe cómodamente en la mano. Además, con la cubierta de plástico vidriado 3D y el escáner de huellas dactilares en la pantalla, sentirás curvas suaves y perfectas en los bordes.
+                                        AM
+                                        Arctic Monkeys  
+
                                     </p>
                                 </td>
                                 <td>
-                                    <p>$ 150.00</p>
+                                    <p>$ 9.99 </p>
                                 </td>
                                 <td>
-                                    <a href="?producto=A50&precio=150">Comprar</a>
+                                    <a href="?precio=Artic Monkey&producto=9.99">Comprar</a>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <img src="imagenes/CALM.jpg" />
                                 </td>
                                 <td>
                                     <p>
-                                        Hemos diseñado Galaxy S7 y S7 edge dando rienda suelta a nuestra imaginación. El resultado es una usabilidad incomparable, repleta de funciones avanzadas con un aspecto descaradamente moderno. Unos smartphones con un aspecto realmente atractivo y muy fáciles de usar.
+                                          CALM
+                                          5 Seconds Of Summer
                                     </p>
                                 </td>
                                 <td>
-                                    <p>$ 250.00</p>
+                                    <p>$ 12 </p>
                                 </td>
                                 <td>
-                                    <a href="?producto=S7&precio=250">Comprar</a>
+                                    <a href="?precio=calm 5secon&producto=12">Comprar</a>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <img src="imagenes/CAMILA.jpg" />
                                 </td>
                                 <td>
                                     <p>
-                                        El Galaxy A50 es pura estética de primera calidad. Ya sea en sus colores modernos blanco o negro o en los colores brillantes coral o azul, su cuerpo delgado cabe cómodamente en la mano. Además, con la cubierta de plástico vidriado 3D y el escáner de huellas dactilares en la pantalla, sentirás curvas suaves y perfectas en los bordes.
+                                          Romance [Explicit] 
+                                          Camila Cabello
+
                                     </p>
                                 </td>
                                 <td>
-                                    <p>$ 150.00</p>
+                                    <p>$ 11.22 </p>
                                 </td>
                                 <td>
-                                    <a href="?producto=A50&precio=150">Comprar</a>
+                                    <a href="?precio=camila 5secon&producto=11.22">Comprar</a>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <img src="imagenes/GREEN DAY.jpg" />
                                 </td>
                                 <td>
                                     <p>
-                                        El Galaxy A50 es pura estética de primera calidad. Ya sea en sus colores modernos blanco o negro o en los colores brillantes coral o azul, su cuerpo delgado cabe cómodamente en la mano. Además, con la cubierta de plástico vidriado 3D y el escáner de huellas dactilares en la pantalla, sentirás curvas suaves y perfectas en los bordes.
+                                          Father of All... [Explicit]  
+                                          Green Day 
                                     </p>
                                 </td>
                                 <td>
-                                    <p>$ 150.00</p>
+                                    <p>$ 11.22 </p>
                                 </td>
                                 <td>
-                                    <a href="?producto=A50&precio=150">Comprar</a>
+                                    <a href="?precio=camila 5secon&producto=11.22">Comprar</a>
                                 </td>
-                            </tr>                            
+                            </tr>
+
                             <tr>
                                 <td>
-                                    <div class="col mb-4">
-                                    <div class="card">
-
-                                    <img src="imagenes/PinkFloyd.jpg" class="card-img-top" alt="..."/>
+                                    <img src="imagenes/PinkFloyd.jpg" />
                                 </td>
                                 <td>
                                     <p>
-                                        The Dark Side of the Moon 
-                                        Pink Floyd                                          
+                                          Father of All... [Explicit]  
+                                          Green Day 
                                     </p>
                                 </td>
                                 <td>
-                                    <p>$ 29.37 </p>
+                                    <p>$ 11.22 </p>
                                 </td>
                                 <td>
-                                    <a href="?producto=A50&precio=150">Comprar</a>
+                                    <a href="?precio=camila 5secon&producto=11.22">Comprar</a>
                                 </td>
                             </tr>
                         </tbody>
@@ -172,11 +174,7 @@
                 </div>
             </div>
         </div>
-        <td><a href="eliminar.php?id=<?php echo $row['id'];?>">Salir2</a></td>
-
-
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+       
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
