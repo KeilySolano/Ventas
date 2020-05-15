@@ -16,6 +16,7 @@
 
         <div align="right">
             <a href="index.html">Salir</a>
+            
         </div>
         <hr />
         <br />
@@ -171,6 +172,7 @@
                 </div>
             </div>
         </div>
+        <td><a href="eliminar.php?id=<?php echo $row['id'];?>">Salir2</a></td>
 
 
         <!-- Optional JavaScript -->
