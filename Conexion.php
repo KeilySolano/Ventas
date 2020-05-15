@@ -4,7 +4,7 @@
 	   public function __construct()
        {
             $Server = "localhost";
-            $Datebase = "ventaskn";
+            $Datebase = "basededatos";
             $Usuario = "root";
             $Password = "";
 
